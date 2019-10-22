@@ -34,7 +34,7 @@ sed -i 's/\r$//' README.md
 #export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
 %cmake \
   -DBINARY_RELEASE=ON
-%make_jobs
+%make_build
 
 %install
 install -D -m 0755 build/devilutionx %{buildroot}%{_bindir}/devilutionx
