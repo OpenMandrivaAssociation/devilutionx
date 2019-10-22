@@ -16,6 +16,7 @@ BuildRequires:  pkgconfig(SDL2_mixer)
 BuildRequires:  pkgconfig(SDL2_ttf)
 BuildRequires:  pkgconfig(libsodium)
 BuildRequires:  pkgconfig(sdl2)
+BuildRequires:  desktop-file-utils
 
 Requires:       fonts-ttf-charis-sil
 
@@ -31,7 +32,7 @@ files from the original Diablo1 CD.
 sed -i 's/\r$//' README.md
 
 %build
-#export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
+export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
 %cmake \
   -DBINARY_RELEASE=ON
 %make_build
@@ -41,6 +42,9 @@ install -D -m 0755 build/devilutionx %{buildroot}%{_bindir}/devilutionx
 install -p -D -m644 Packaging/resources/16.png %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 install -p -D -m644 Packaging/resources/Diablo_32.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 install -p -D -m644 Packaging/resources/Diablo_48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
+
+install -m 755 build/devilutionx %{buildroot}%{_bindir}/%{name}
+desktop-file-install --remove-category="Qt" --dir=%{buildroot}%{_datadir}/applications %{SOURCE1} 
 
 %post
 echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
