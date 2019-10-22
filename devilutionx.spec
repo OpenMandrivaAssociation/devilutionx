@@ -42,9 +42,10 @@ install -D -m 0755 build/devilutionx %{buildroot}%{_bindir}/devilutionx
 install -p -D -m644 Packaging/resources/16.png %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 install -p -D -m644 Packaging/resources/Diablo_32.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 install -p -D -m644 Packaging/resources/Diablo_48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
+install -p -D -m644 Packaging/fedora/devilutionx.desktop %{buildroot}%{_datadir}/applications
 
 install -m 755 build/devilutionx %{buildroot}%{_bindir}/%{name}
-desktop-file-install --remove-category="Qt" --dir=%{buildroot}%{_datadir}/applications %{SOURCE1} 
+
 
 %post
 echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
@@ -54,4 +55,4 @@ echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
-#{_datadir}/applications/%{name}.desktop
+%{_datadir}/applications/%{name}.desktop
