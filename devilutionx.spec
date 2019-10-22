@@ -6,7 +6,7 @@ License:        Public Domain
 Group:          Games/Adventure
 URL:            https://github.com/diasurgical/devilutionX
 Source:         https://github.com/diasurgical/devilutionX/archive/%{version}/%{name}-%{version}.tar.gz
-Patch0:         devilutionx-fix-build.patch
+#Patch0:         devilutionx-fix-build.patch
 BuildRequires:  cmake
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
@@ -26,7 +26,7 @@ files from the original Diablo1 CD.
 
 %prep
 %setup -q -n devilutionX-%{version}
-%patch0 -p1
+#patch0 -p1
 sed -i 's/\r$//' README.md
 
 %build
