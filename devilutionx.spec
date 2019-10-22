@@ -17,7 +17,7 @@ BuildRequires:  pkgconfig(SDL2_ttf)
 BuildRequires:  pkgconfig(libsodium)
 BuildRequires:  pkgconfig(sdl2)
 
-Requires:       sil-charis-fonts
+Requires:       fonts-ttf-charis-sil
 
 %description
 DevilutionX is a open source implementation of the game engine used
