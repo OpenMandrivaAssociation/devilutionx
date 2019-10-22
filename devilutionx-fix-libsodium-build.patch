@@ -1,0 +1,15 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 11b4563..4fe68dd 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -79,10 +79,6 @@ if(HAIKU)
+   set(ASAN OFF)
+ endif()
+ 
+-if(DIST)
+-  set(sodium_USE_STATIC_LIBS ON)
+-endif()
+-
+ set(CMAKE_CXX_STANDARD 11)
+ set(CMAKE_CXX_EXTENSIONS OFF)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
