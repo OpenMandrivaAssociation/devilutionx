@@ -50,4 +50,4 @@ echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/icons/hicolor/*/apps/%{name}.png
-%{_datadir}/applications/%{name}.desktop
+#{_datadir}/applications/%{name}.desktop
