@@ -8,7 +8,7 @@ License:        Public Domain
 Group:          Games/Adventure
 URL:            https://github.com/diasurgical/devilutionX
 Source:         https://github.com/diasurgical/devilutionX/archive/%{version}/%{oname}-%{version}.tar.gz
-Patch0:         devilutionx-fix-libsodium-build.patch
+Patch0:         devilutionx-fix-build-libsodium-openmandriva.patch
 BuildRequires:  cmake
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
@@ -27,11 +27,11 @@ files from the original Diablo1 CD.
 
 %prep
 %setup -q -n devilutionX-%{version}
-%autopatch -p1
+%autopatch -p0
 sed -i 's/\r$//' README.md
 
 %build
-export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
+#export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
 %cmake \
   -DBINARY_RELEASE=ON
 %make_jobs
