@@ -1,0 +1,15 @@
+Index: CMakeLists.txt
+===================================================================
+--- CMakeLists.txt
++++ CMakeLists.txt	2019-10-22 19:45:13.007741562 +0200
+@@ -79,10 +79,6 @@
+   set(ASAN OFF)
+ endif()
+ 
+-if(DIST)
+-  set(sodium_USE_STATIC_LIBS ON)
+-endif()
+-
+ set(CMAKE_CXX_STANDARD 11)
+ set(CMAKE_CXX_EXTENSIONS OFF)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
