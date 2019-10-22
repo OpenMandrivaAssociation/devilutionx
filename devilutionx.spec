@@ -12,7 +12,6 @@ Source:         https://github.com/diasurgical/devilutionX/archive/%{version}/%{
 BuildRequires:  cmake
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
-BuildRequires:  update-desktop-files
 BuildRequires:  pkgconfig(SDL2_mixer)
 BuildRequires:  pkgconfig(SDL2_ttf)
 BuildRequires:  pkgconfig(libsodium)
