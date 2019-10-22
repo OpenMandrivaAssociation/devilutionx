@@ -41,7 +41,6 @@ install -D -m 0755 build/devilutionx %{buildroot}%{_bindir}/devilutionx
 install -p -D -m644 Packaging/resources/16.png %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 install -p -D -m644 Packaging/resources/Diablo_32.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
 install -p -D -m644 Packaging/resources/Diablo_48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
-%suse_update_desktop_file -c %{name} "DevilutionX" "A Diablo1 Game Engine" %{name} %{name} Game RolePlaying
 
 %post
 echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
