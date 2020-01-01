@@ -19,9 +19,8 @@ BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  desktop-file-utils
 
 #Requires:       fonts-ttf-charis-sil
-Requires:       %{lib}SDL2_ttf2.0_0
 Requires:       SDL2_mixer-player
-Requires:       %{lib}SDL2_mixer2.0_0
+
 
 %description
 DevilutionX is a open source implementation of the game engine used
