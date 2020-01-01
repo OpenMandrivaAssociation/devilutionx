@@ -1,14 +1,14 @@
 %define oname   devilutionX
 
 Name:           devilutionx
-Version:        0.5.0
+Version:        1.0.0
 Release:        1
 Summary:        An open source implementation of the Diablo 1 game engine
 License:        Public Domain
 Group:          Games/Adventure
 URL:            https://github.com/diasurgical/devilutionX
 Source:         https://github.com/diasurgical/devilutionX/archive/%{version}/%{oname}-%{version}.tar.gz
-Patch0:         devilutionx-fix-build-libsodium-openmandriva.patch
+#Patch0:         devilutionx-fix-build-libsodium-openmandriva.patch
 BuildRequires:  cmake
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
