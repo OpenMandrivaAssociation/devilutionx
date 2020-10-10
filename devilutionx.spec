@@ -42,7 +42,7 @@ export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisS
 install -D -m 0755 build/devilutionx %{buildroot}%{_bindir}/devilutionx
 #install -p -D -m644 Packaging/resources/16.png %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 #install -p -D -m644 Packaging/resources/Diablo_32.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
-install -p -D -m644 Packaging/resources/Diablo_48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
+#install -p -D -m644 Packaging/resources/Diablo_48.png %{buildroot}%{_datadir}/icons/hicolor/48x48/apps/%{name}.png
 install -p -D -m644 Packaging/fedora/devilutionx.desktop %{buildroot}%{_datadir}/applications/devilutionx.desktop
 install -p -D -m644 Packaging/resources/CharisSILB.ttf %{buildroot}%{_datadir}/fonts/truetype/CharisSILB.ttf
 install -m 755 build/devilutionx %{buildroot}%{_bindir}/%{name}
