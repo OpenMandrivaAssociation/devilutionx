@@ -39,6 +39,7 @@ export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisS
 %make_build
 
 %install
+%make_install
 install -D -m 0755 build/devilutionx %{buildroot}%{_bindir}/devilutionx
 #install -p -D -m644 Packaging/resources/16.png %{buildroot}%{_datadir}/icons/hicolor/16x16/apps/%{name}.png
 #install -p -D -m644 Packaging/resources/Diablo_32.png %{buildroot}%{_datadir}/icons/hicolor/32x32/apps/%{name}.png
