@@ -55,6 +55,6 @@ echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
 %license LICENSE
 %doc README.md
 %{_bindir}/%{name}
-%{_datadir}/icons/hicolor/*/apps/%{name}.png
+#{_datadir}/icons/hicolor/*/apps/%{name}.png
 %{_datadir}/applications/*
 %{_datadir}/fonts/truetype/CharisSILB.ttf
