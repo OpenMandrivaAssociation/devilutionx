@@ -35,7 +35,8 @@ sed -i 's/\r$//' README.md
 %build
 export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
 %cmake \
-  -DBINARY_RELEASE=ON
+  -DBINARY_RELEASE=ON \
+  -DVERSION_NUM=%{version}
 %make_build
 
 %install
