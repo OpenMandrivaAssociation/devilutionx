@@ -1,7 +1,7 @@
 %define oname   devilutionX
 
 Name:           devilutionx
-Version:        1.1.0
+Version:        1.2.1
 Release:        1
 Summary:        An open source implementation of the Diablo 1 game engine
 License:        Public Domain
@@ -35,7 +35,8 @@ sed -i 's/\r$//' README.md
 %build
 export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
 %cmake \
-  -DBINARY_RELEASE=ON
+  -DBINARY_RELEASE=ON \
+  -DVERSION_NUM=%{version}
 %make_build
 
 %install
