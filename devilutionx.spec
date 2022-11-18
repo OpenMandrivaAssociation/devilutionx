@@ -7,7 +7,8 @@ Summary:        An open source implementation of the Diablo 1 game engine
 License:        Public Domain
 Group:          Games/Adventure
 URL:            https://github.com/diasurgical/devilutionX
-Source:         https://github.com/diasurgical/devilutionX/archive/%{version}/%{oname}-%{version}.tar.gz
+#Source:         https://github.com/diasurgical/devilutionX/archive/%{version}/%{oname}-%{version}.tar.gz
+Source0:        https://github.com/diasurgical/devilutionX/releases/download/%{version}/devilutionx-src.tar.xz
 BuildRequires:  cmake
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
@@ -28,7 +29,7 @@ This package only includes the binary files, you still need the data
 files from the original Diablo1 CD.
 
 %prep
-%setup -q -n devilutionX-%{version}
+%setup -q -n devilutionx-src-%{version}
 %autopatch -p0
 sed -i 's/\r$//' README.md
 
