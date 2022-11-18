@@ -17,6 +17,7 @@ BuildRequires:  pkgconfig(SDL2_ttf)
 BuildRequires:  pkgconfig(libsodium)
 BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  desktop-file-utils
+BuildRequires:  pkgconfig(gtest)
 
 #Requires:       fonts-ttf-charis-sil
 Requires:       SDL2_mixer-player
