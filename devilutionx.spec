@@ -16,6 +16,7 @@ BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(SDL2_mixer)
 BuildRequires:  pkgconfig(SDL2_ttf)
+BuildRequires:  pkgconfig(SDL2_image)
 BuildRequires:  pkgconfig(libsodium)
 BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  desktop-file-utils
