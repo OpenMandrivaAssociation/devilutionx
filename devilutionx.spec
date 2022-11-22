@@ -1,4 +1,7 @@
 %define _disable_ld_no_undefined 1
+%ifarch %{aarch64}
+%global optflags %{optflags} -march=armv8+crypto
+%endif
 
 %define oname   devilutionX
 
