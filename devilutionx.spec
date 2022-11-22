@@ -12,6 +12,7 @@ URL:            https://github.com/diasurgical/devilutionX
 #Source:         https://github.com/diasurgical/devilutionX/archive/%{version}/%{oname}-%{version}.tar.gz
 Source0:        https://github.com/diasurgical/devilutionX/releases/download/%{version}/devilutionx-src.tar.xz
 BuildRequires:  cmake
+BuildRequires:	ninja
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(SDL2_mixer)
