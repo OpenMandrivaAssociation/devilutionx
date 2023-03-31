@@ -7,7 +7,7 @@
 
 Name:           devilutionx
 Version:        1.4.1
-Release:        1
+Release:        2
 Summary:        An open source implementation of the Diablo 1 game engine
 License:        Public Domain
 Group:          Games/Adventure
