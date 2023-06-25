@@ -57,7 +57,6 @@ export LD_LIBRARY_PATH=$(pwd)/test:$LD_LIBRARY_PATH
 echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
 
 %files
-%license LICENSE
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/diasurgical
