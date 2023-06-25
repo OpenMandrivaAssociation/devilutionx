@@ -60,5 +60,6 @@ echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/diasurgical
+%{_datadir}/metainfo/devilutionx.metainfo.xml
 %{_datadir}/icons/hicolor/512x512/apps/devilutionx*.png
 %{_datadir}/applications/*
