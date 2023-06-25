@@ -6,8 +6,8 @@
 %define oname   devilutionX
 
 Name:           devilutionx
-Version:        1.4.1
-Release:        2
+Version:        1.5.0
+Release:        1
 Summary:        An open source implementation of the Diablo 1 game engine
 License:        Public Domain
 Group:          Games/Adventure
@@ -57,9 +57,9 @@ export LD_LIBRARY_PATH=$(pwd)/test:$LD_LIBRARY_PATH
 echo "copy diabdat.mpq to ~/.local/share/diasurgical/devilution/"
 
 %files
-%license LICENSE
 %doc README.md
 %{_bindir}/%{name}
 %{_datadir}/diasurgical
+%{_datadir}/metainfo/devilutionx.metainfo.xml
 %{_datadir}/icons/hicolor/512x512/apps/devilutionx*.png
 %{_datadir}/applications/*
