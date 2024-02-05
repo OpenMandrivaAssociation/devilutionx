@@ -25,6 +25,7 @@ BuildRequires:  pkgconfig(libsodium)
 BuildRequires:  pkgconfig(sdl2)
 BuildRequires:  desktop-file-utils
 BuildRequires:  pkgconfig(gtest)
+BuildRequires:	pkgconfig(fmt)
 BuildRequires:  libnatpmp-devel
 
 #Requires:       fonts-ttf-charis-sil
