@@ -6,7 +6,7 @@
 %define oname   devilutionX
 
 Name:           devilutionx
-Version:        1.5.4
+Version:        1.5.5
 Release:        1
 Summary:        An open source implementation of the Diablo 1 game engine
 License:        Public Domain
