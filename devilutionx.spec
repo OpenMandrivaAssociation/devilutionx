@@ -43,7 +43,8 @@ files from the original Diablo1 CD.
 sed -i 's/\r$//' README.md
 
 %build
-export CXXFLAGS='%{optflags} -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
+# fmt 12 no longer pulls format() in via fmt/core.h (bundled sdl_audiolib)
+export CXXFLAGS='%{optflags} -DFMT_DEPRECATED_HEAVY_CORE -DTTF_FONT_PATH=\"/usr/share/fonts/truetype/CharisSILB.ttf\"'
 %cmake \
 	-DBINARY_RELEASE=ON \
 	-DVERSION_NUM=%{version} \
