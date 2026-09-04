@@ -48,6 +48,7 @@ export CXXFLAGS='%{optflags} -DFMT_DEPRECATED_HEAVY_CORE -DTTF_FONT_PATH=\"/usr/
 %cmake \
 	-DBINARY_RELEASE=ON \
 	-DVERSION_NUM=%{version} \
+	-DBUILD_TESTING=OFF \
 	-G Ninja
 export LD_LIBRARY_PATH=$(pwd)/test:$LD_LIBRARY_PATH
 %ninja_build
